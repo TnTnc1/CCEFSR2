@@ -25,16 +25,14 @@
   };
 
   burger.addEventListener("click", toggleMenu);
-
   links.forEach(a => a.addEventListener("click", closeMenu));
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });
 
-  // click outside to close (mobile)
   document.addEventListener("click", (e) => {
-    const isClickInside = nav.contains(e.target) || burger.contains(e.target);
-    if (!isClickInside && nav.classList.contains("is-open")) closeMenu();
+    const isInside = nav.contains(e.target) || burger.contains(e.target);
+    if (!isInside && nav.classList.contains("is-open")) closeMenu();
   });
 })();
