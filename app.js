@@ -2,7 +2,6 @@
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const links = document.querySelectorAll(".nav-links a");
-
   if (!burger || !nav) return;
 
   const openMenu = () => {
@@ -32,7 +31,7 @@
   });
 
   document.addEventListener("click", (e) => {
-    const isInside = nav.contains(e.target) || burger.contains(e.target);
-    if (!isInside && nav.classList.contains("is-open")) closeMenu();
+    const inside = nav.contains(e.target) || burger.contains(e.target);
+    if (!inside && nav.classList.contains("is-open")) closeMenu();
   });
 })();
