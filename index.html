@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CCEFSR — Sécurité Routière en Nouvelle-Calédonie</title>
 
-  <meta name="description" content="Centre Calédonien d'Éducation et de Formation à la Sécurité Routière. Stages justice/permis, formation entreprises, audit pré-embauche et formation ECSR en Nouvelle-Calédonie." />
+  <meta name="description" content="CCEFSR Nouvelle-Calédonie : stages justice/permis, formation entreprises, audits pré-embauche, expertise accident et formation ECSR. Nouméa, Mont-Dore, Koné." />
   <meta name="theme-color" content="#F39C12" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="CCEFSR — Sécurité Routière en Nouvelle-Calédonie" />
-  <meta property="og:description" content="Stages justice/permis, formation entreprises, audit pré-embauche, formation ECSR. Nouméa, Koné, Mont-Dore." />
+  <meta property="og:description" content="Stages justice/permis, formation entreprises, audit pré-embauche, expertise accident, formation ECSR." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://i.postimg.cc/8cBqBfG8/logo.png" />
 
@@ -19,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- Icons (optionnel: lourd). Idéalement remplacer par SVG plus tard -->
+  <!-- Icons (optionnel) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- JSON-LD (SEO local) -->
+  <!-- SEO local -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +35,7 @@
     "email": "ccefsr.98@gmail.com",
     "address": [{
       "@type": "PostalAddress",
-      "streetAddress": "258 rue Antoine Griscelli - Boulari",
+      "streetAddress": "256 rue Antoine Griscelli - Boulari",
       "addressLocality": "Mont-Dore",
       "addressRegion": "Nouvelle-Calédonie",
       "addressCountry": "NC"
@@ -54,6 +54,18 @@
 
 <body>
   <a class="skip-link" href="#accueil">Aller au contenu</a>
+
+  <!-- CTA flottant (mobile + desktop) -->
+  <div class="floating-cta" aria-label="Contact rapide">
+    <a class="fab fab-whatsapp" href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations." target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a class="fab fab-call" href="tel:+687771258">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+      <span>Appeler</span>
+    </a>
+  </div>
 
   <header class="site-header">
     <div class="container nav-container">
@@ -86,8 +98,10 @@
         <ul id="primary-nav" class="nav-links">
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#particuliers">Particuliers</a></li>
+          <li><a href="#dates">Dates</a></li>
           <li><a href="#entreprises">Entreprises</a></li>
           <li><a href="#moniteurs">Devenir Moniteur</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact" class="btn-nav">Contact</a></li>
         </ul>
       </nav>
@@ -110,15 +124,22 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Nous contacter</a>
-          <a href="#particuliers" class="btn btn-outline">Stages particuliers</a>
+          <a href="#contact" class="btn btn-primary">Demander un devis / s’inscrire</a>
+          <a href="#dates" class="btn btn-outline">Voir les prochaines dates</a>
         </div>
       </div>
     </section>
 
     <div class="info-bar" role="region" aria-label="Informations de contact">
       <div class="container">
-        <p><i class="fas fa-phone-alt" aria-hidden="true"></i> Info / Réservation : <strong>+687 77 12 58</strong> ou <strong>+687 76 99 29</strong></p>
+        <p>
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          Info / Réservation :
+          <strong><a href="tel:+687771258">+687 77 12 58</a></strong> ou
+          <strong><a href="tel:+687769929">+687 76 99 29</a></strong>
+          &nbsp;—&nbsp;
+          <strong><a href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20je%20souhaite%20m'inscrire%20à%20un%20stage." target="_blank" rel="noopener">WhatsApp</a></strong>
+        </p>
       </div>
     </div>
 
@@ -130,7 +151,7 @@
           <article class="card">
             <div class="icon-box" aria-hidden="true"><i class="fas fa-gavel"></i></div>
             <h3>Stages Justice & Permis</h3>
-            <p>Alternative aux poursuites ou restitution de permis : compréhension technique + comportementale.</p>
+            <p>Alternative aux poursuites ou restitution de permis : technique + comportement + contexte calédonien.</p>
             <ul>
               <li><i class="fas fa-check" aria-hidden="true"></i> Durée : 1 journée</li>
               <li><i class="fas fa-check" aria-hidden="true"></i> Nouméa & Koné</li>
@@ -174,11 +195,24 @@
           <p>Objectif : transformer une obligation légale en mise à jour réelle de vos compétences de conducteur.</p>
 
           <div class="cta-row">
-            <a href="tel:+687771258" class="btn btn-primary"><i class="fas fa-phone-alt" aria-hidden="true"></i> Réserver par téléphone</a>
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i> Demander une inscription
+            </a>
+            <a class="btn btn-outline btn-outline-dark"
+               href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20je%20souhaite%20m'inscrire%20au%20stage%20justice/permis.%20Pouvez-vous%20me%20donner%20les%20prochaines%20dates%20?"
+               target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscription WhatsApp
+            </a>
             <a class="btn btn-outline btn-outline-dark"
                href="mailto:ccefsr.98@gmail.com?subject=Demande%20de%20RIB%20pour%20inscription%20Stage&body=Bonjour,%20je%20souhaite%20m'inscrire%20au%20stage.%20Pouvez-vous%20m'envoyer%20votre%20RIB%20pour%20le%20virement%20de%207%20500%20F%20?%20Merci.">
               <i class="fas fa-university" aria-hidden="true"></i> Demander le RIB
             </a>
+          </div>
+
+          <div class="mini-trust">
+            <div class="pill"><i class="fas fa-shield-halved" aria-hidden="true"></i> Encadrement expert</div>
+            <div class="pill"><i class="fas fa-location-dot" aria-hidden="true"></i> Nouméa • Koné</div>
+            <div class="pill"><i class="fas fa-file-lines" aria-hidden="true"></i> Attestation en fin de stage</div>
           </div>
         </div>
 
@@ -188,6 +222,63 @@
                class="content-img"
                loading="lazy"
                decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Prochaines dates -->
+    <section id="dates" class="section-padding" aria-labelledby="dates-title">
+      <div class="container">
+        <h2 id="dates-title" class="section-title">Prochaines dates de stages</h2>
+
+        <div class="dates-grid">
+          <div class="dates-card">
+            <h3><i class="fas fa-gavel" aria-hidden="true"></i> Stage Justice / Permis</h3>
+            <p class="muted">Ajoute ici tes dates au fil de l’eau (ou je te fais une version “Google Sheet → site” après).</p>
+
+            <div class="dates-table" role="table" aria-label="Liste des sessions">
+              <div class="row head" role="row">
+                <div role="columnheader">Lieu</div>
+                <div role="columnheader">Date</div>
+                <div role="columnheader">Places</div>
+                <div role="columnheader">Action</div>
+              </div>
+
+              <!-- EXEMPLES (à modifier) -->
+              <div class="row" role="row">
+                <div role="cell">Nouméa / Boulari</div>
+                <div role="cell">À confirmer</div>
+                <div role="cell">—</div>
+                <div role="cell"><a class="link" href="#contact">Pré-inscription</a></div>
+              </div>
+
+              <div class="row" role="row">
+                <div role="cell">Koné</div>
+                <div role="cell">À confirmer</div>
+                <div role="cell">—</div>
+                <div role="cell"><a class="link" href="#contact">Pré-inscription</a></div>
+              </div>
+            </div>
+
+            <div class="dates-actions">
+              <a class="btn btn-primary" href="#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i> Je veux une place</a>
+              <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+                 href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20quelles%20sont%20les%20prochaines%20dates%20de%20stage%20justice/permis%20?">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Demander les dates
+              </a>
+            </div>
+          </div>
+
+          <div class="dates-card">
+            <h3><i class="fas fa-helmet-safety" aria-hidden="true"></i> Entreprises / Flottes</h3>
+            <p>Interventions sur site (Mines, BTP, Transport) : HSE, éco-conduite, piste minière, audits pré-embauche.</p>
+            <ul class="small-list">
+              <li>✅ Programme sur mesure</li>
+              <li>✅ Rapport & recommandations</li>
+              <li>✅ Déploiement multi-sites</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact"><i class="fas fa-briefcase" aria-hidden="true"></i> Demander une offre</a>
+          </div>
         </div>
       </div>
     </section>
@@ -227,10 +318,40 @@
         </div>
 
         <p>Renseignez-vous sur la prochaine session de formation au Titre Professionnel.</p>
-        <a href="mailto:ccefsr.98@gmail.com" class="btn btn-white">Candidater</a>
+        <a href="#contact" class="btn btn-white">Candidater / infos</a>
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-light" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">FAQ</h2>
+
+        <div class="faq">
+          <details>
+            <summary>Quel est le tarif et la durée du stage Justice / Permis ?</summary>
+            <p>Durée : <strong>1 journée</strong>. Tarif indicatif : <strong>7 500 F</strong> (selon cadre/organisation). Contactez-nous pour confirmation et dates.</p>
+          </details>
+
+          <details>
+            <summary>Où se déroulent les stages actuellement ?</summary>
+            <p><strong>Adresse des stages (actuelle)</strong> : 256 rue Antoine Griscelli, Boulari.</p>
+          </details>
+
+          <details>
+            <summary>Comment s’inscrire ?</summary>
+            <p>Le plus rapide : <strong>WhatsApp</strong> ou le <strong>formulaire</strong> ci-dessous. Nous vous rappelons pour valider la session, les pièces et le paiement.</p>
+          </details>
+
+          <details>
+            <summary>Proposez-vous des formations pour entreprises / mines ?</summary>
+            <p>Oui : HSE, éco-conduite, piste minière, audits pré-embauche, expertise post-accident. Offre sur mesure et déploiement multi-sites.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Netlify form -->
     <section id="contact" class="contact section-padding" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title" class="section-title">Contactez-nous</h2>
@@ -239,7 +360,7 @@
           <div class="contact-info">
             <h3>Nos coordonnées</h3>
             <p><strong>Responsable :</strong> M. José BOLO</p>
-            <p>Pour les inscriptions et demandes entreprises, privilégiez l’appel téléphonique.</p>
+            <p>Pour les inscriptions aux stages et demandes entreprises, privilégiez l’appel ou WhatsApp.</p>
 
             <div class="info-item">
               <i class="fas fa-phone-alt" aria-hidden="true"></i>
@@ -247,6 +368,15 @@
                 <p><a href="tel:+687771258"><strong>+687 77 12 58</strong></a></p>
                 <p><a href="tel:+687769929"><strong>+687 76 99 29</strong></a></p>
               </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <p>
+                <a href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations." target="_blank" rel="noopener">
+                  WhatsApp : +687 77 12 58
+                </a>
+              </p>
             </div>
 
             <div class="info-item">
@@ -258,21 +388,43 @@
               <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               <div>
                 <p><strong class="accent">Lieu des stages & formations :</strong></p>
-                <p>258 rue Antoine Griscelli - Boulari</p>
+                <p>256 rue Antoine Griscelli - Boulari</p>
+                <p>
+                  <a class="link" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/search/?api=1&query=256%20rue%20Antoine%20Griscelli%20Boulari%20Mont-Dore">
+                    Ouvrir dans Google Maps / itinéraire
+                  </a>
+                </p>
+
                 <p class="mt"><strong>Siège social (administratif) :</strong></p>
                 <p>40 rue des Dauphins - Boulari - Mont-Dore</p>
               </div>
             </div>
           </div>
 
-          <!-- Formulaire: toujours mailto ici, mais propre + messages -->
           <div class="contact-form-wrapper">
-            <form class="contact-form" action="mailto:ccefsr.98@gmail.com" method="post" enctype="text/plain">
+            <!-- Netlify Forms -->
+            <form
+              class="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/merci"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label>Ne pas remplir : <input name="bot-field" /></label>
+              </p>
+
               <label for="nom">Votre nom et prénom</label>
               <input id="nom" type="text" name="nom_prenom" required autocomplete="name" placeholder="Ex: Jean Dupont" />
 
               <label for="tel">Votre téléphone (important)</label>
               <input id="tel" type="tel" name="telephone" required autocomplete="tel" inputmode="tel" placeholder="Ex: 77 77 77" />
+
+              <label for="email">Votre email (optionnel)</label>
+              <input id="email" type="email" name="email" autocomplete="email" placeholder="Ex: nom@email.com" />
 
               <label for="sujet">Objet</label>
               <select id="sujet" name="sujet">
@@ -288,11 +440,22 @@
               <textarea id="msg" name="message" rows="5" placeholder="Bonjour, je souhaite…"></textarea>
 
               <button type="submit" class="btn btn-primary">
-                <i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyer
+                <i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyer ma demande
               </button>
 
-              <p class="form-note">Ce bouton ouvrira votre application de messagerie.</p>
+              <p class="form-note">Réponse rapide par téléphone/WhatsApp si vous l’avez renseigné.</p>
             </form>
+
+            <div class="form-alt">
+              <p class="muted">Ou contactez-nous directement :</p>
+              <div class="cta-row">
+                <a class="btn btn-outline btn-outline-dark" href="tel:+687771258"><i class="fas fa-phone" aria-hidden="true"></i> Appeler</a>
+                <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+                   href="https://wa.me/687771258?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20infos.">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
