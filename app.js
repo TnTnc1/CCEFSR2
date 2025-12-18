@@ -2,6 +2,7 @@
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const links = document.querySelectorAll(".nav-links a");
+
   if (!burger || !nav) return;
 
   const openMenu = () => {
