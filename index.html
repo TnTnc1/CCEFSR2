@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CCEFSR — Sécurité Routière en Nouvelle-Calédonie</title>
 
-  <meta name="description" content="CCEFSR Nouvelle-Calédonie : stages justice/permis, formation entreprises, audits pré-embauche, expertise accident et formation ECSR. Nouméa, Mont-Dore, Koné." />
+  <title>CCEFSR — Sécurité Routière Nouvelle-Calédonie (Entreprises & Particuliers)</title>
+  <meta name="description" content="CCEFSR Nouvelle-Calédonie : prévention du risque routier salarié pour entreprises (HSE, flottes, mines), stages Justice/Permis (8h30–15h, 15 places), audits, expertise accident, formation ECSR." />
   <meta name="theme-color" content="#F39C12" />
+
+  <!-- Canonical (mets ton domaine quand tu l'auras : https://ccefsr.nc/) -->
+  <link rel="canonical" href="https://ccefsr2.netlify.app/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="CCEFSR — Sécurité Routière en Nouvelle-Calédonie" />
-  <meta property="og:description" content="Stages justice/permis, formation entreprises, audit pré-embauche, expertise accident, formation ECSR." />
+  <meta property="og:description" content="Entreprises : prévention du risque routier salarié (HSE). Particuliers : stages Justice/Permis. Audits & expertise." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://i.postimg.cc/8cBqBfG8/logo.png" />
 
@@ -19,35 +22,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- Icons (optionnel) -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <link rel="stylesheet" href="./style.css" />
 
-  <!-- SEO local -->
+  <!-- SEO: LocalBusiness -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "CCEFSR",
-    "description": "Centre Calédonien d'Éducation et de Formation à la Sécurité Routière en Nouvelle-Calédonie.",
-    "telephone": ["+687771258", "+687769929"],
-    "email": "ccefsr.98@gmail.com",
-    "address": [{
-      "@type": "PostalAddress",
-      "streetAddress": "256 rue Antoine Griscelli - Boulari",
-      "addressLocality": "Mont-Dore",
-      "addressRegion": "Nouvelle-Calédonie",
-      "addressCountry": "NC"
-    },{
-      "@type": "PostalAddress",
-      "streetAddress": "40 rue des Dauphins - Boulari - Mont-Dore",
-      "addressLocality": "Mont-Dore",
-      "addressRegion": "Nouvelle-Calédonie",
-      "addressCountry": "NC"
-    }],
-    "areaServed": "Nouvelle-Calédonie",
-    "url": ""
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"CCEFSR",
+    "description":"Centre Calédonien d'Éducation et de Formation à la Sécurité Routière en Nouvelle-Calédonie. Prévention du risque routier salarié (entreprises), stages justice/permis (particuliers), audits et expertise.",
+    "telephone":["+687771258","+687769929"],
+    "email":"ccefsr.98@gmail.com",
+    "address":[
+      {
+        "@type":"PostalAddress",
+        "streetAddress":"256 rue Antoine Griscelli - Boulari",
+        "addressLocality":"Mont-Dore",
+        "addressRegion":"Nouvelle-Calédonie",
+        "addressCountry":"NC"
+      },
+      {
+        "@type":"PostalAddress",
+        "streetAddress":"40 rue des Dauphins - Boulari - Mont-Dore",
+        "addressLocality":"Mont-Dore",
+        "addressRegion":"Nouvelle-Calédonie",
+        "addressCountry":"NC"
+      }
+    ],
+    "areaServed":"Nouvelle-Calédonie",
+    "url":"https://ccefsr2.netlify.app/"
   }
   </script>
 </head>
@@ -55,10 +61,27 @@
 <body>
   <a class="skip-link" href="#accueil">Aller au contenu</a>
 
+  <!-- Bandeau haut : focus business + stage -->
+  <div class="top-announcement" role="region" aria-label="Infos rapides">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="badge">Entreprise</span>
+        <span><strong>Risque routier salarié</strong> : prévention, traçabilité, preuve d’actions (HSE).</span>
+      </div>
+      <div class="announcement-right">
+        <a class="mini-btn" href="#entreprises">Offre Entreprise</a>
+        <a class="mini-btn primary" target="_blank" rel="noopener"
+           href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20confidentiel%20sur%20la%20pr%C3%A9vention%20du%20risque%20routier%20salari%C3%A9%20dans%20mon%20entreprise.%20Nom%20:%20%20Soci%C3%A9t%C3%A9%20:%20%20T%C3%A9l%20:%20">
+          Échange confidentiel (WhatsApp)
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- CTA flottant -->
   <div class="floating-cta" aria-label="Contact rapide">
     <a class="fab fab-whatsapp"
-       href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations%20/%20m'inscrire%20%C3%A0%20un%20stage."
+       href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations%20/%20m'inscrire%20%C3%A0%20un%20stage%20ou%20parler%20de%20pr%C3%A9vention%20entreprise."
        target="_blank" rel="noopener">
       <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
       <span>WhatsApp</span>
@@ -85,23 +108,16 @@
       </div>
 
       <nav class="site-nav" aria-label="Navigation principale">
-        <button
-          class="burger"
-          type="button"
-          aria-label="Ouvrir le menu"
-          aria-controls="primary-nav"
-          aria-expanded="false"
-        >
-          <span class="line1"></span>
-          <span class="line2"></span>
-          <span class="line3"></span>
+        <button class="burger" type="button" aria-label="Ouvrir le menu" aria-controls="primary-nav" aria-expanded="false">
+          <span class="line1"></span><span class="line2"></span><span class="line3"></span>
         </button>
 
         <ul id="primary-nav" class="nav-links">
           <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#entreprises">Entreprises</a></li>
+          <li><a href="#risque">Risque routier</a></li>
           <li><a href="#particuliers">Particuliers</a></li>
           <li><a href="#dates">Dates</a></li>
-          <li><a href="#entreprises">Entreprises</a></li>
           <li><a href="#moniteurs">Devenir Moniteur</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact" class="btn-nav">Contact</a></li>
@@ -111,6 +127,7 @@
   </header>
 
   <main id="main">
+    <!-- HERO: repositionnement entreprise + particuliers -->
     <section id="accueil" class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <div class="video-container" aria-hidden="true">
@@ -119,15 +136,32 @@
           </video>
         </div>
 
-        <h1 id="hero-title">L'Expertise de la Sécurité Routière en Nouvelle-Calédonie</h1>
-        <p>
-          Seul organisme habilité à former les enseignants de la conduite.
-          Stages justice/permis, sécurité flotte entreprises, audits et expertise technique.
+        <h1 id="hero-title">Sécurité routière en Nouvelle-Calédonie : entreprises & conducteurs</h1>
+
+        <p class="hero-lead">
+          <strong>Entreprises :</strong> prévention du risque routier salarié, réduction des accidents de trajet, traçabilité des actions (HSE) et accompagnement terrain.
+          <br />
+          <strong>Particuliers :</strong> stages Justice/Permis et sensibilisation à haut niveau.
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Demander un devis / s’inscrire</a>
-          <a href="#dates" class="btn btn-outline">Voir les prochaines dates</a>
+          <a class="btn btn-primary"
+             target="_blank" rel="noopener"
+             href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20confidentiel%20sur%20la%20pr%C3%A9vention%20du%20risque%20routier%20salari%C3%A9%20dans%20mon%20entreprise.%20Nom%20:%20%20Soci%C3%A9t%C3%A9%20:%20%20T%C3%A9l%20:%20">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            Parler à un expert (Entreprise)
+          </a>
+
+          <a href="#dates" class="btn btn-outline">
+            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+            Voir les dates de stage
+          </a>
+        </div>
+
+        <div class="mini-trust hero-trust">
+          <div class="pill"><i class="fas fa-shield-halved" aria-hidden="true"></i> HSE / Flottes / Mines</div>
+          <div class="pill"><i class="fas fa-clipboard-check" aria-hidden="true"></i> Attestations & traçabilité</div>
+          <div class="pill"><i class="fas fa-location-dot" aria-hidden="true"></i> Interventions NC</div>
         </div>
       </div>
     </section>
@@ -141,75 +175,199 @@
           <strong><a href="tel:+687769929">+687 76 99 29</a></strong>
           &nbsp;—&nbsp;
           <strong>
-            <a href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations%20/%20m'inscrire%20%C3%A0%20un%20stage."
+            <a href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations."
                target="_blank" rel="noopener">WhatsApp</a>
           </strong>
         </p>
       </div>
     </div>
 
+    <!-- DOMAINES -->
     <section class="services section-padding" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title" class="section-title">Nos domaines d’intervention</h2>
 
         <div class="cards-grid">
           <article class="card">
-            <div class="icon-box" aria-hidden="true"><i class="fas fa-gavel"></i></div>
-            <h3>Stages Justice & Permis</h3>
-            <p>Alternative aux poursuites ou restitution de permis : technique + comportement + contexte calédonien.</p>
+            <div class="icon-box" aria-hidden="true"><i class="fas fa-truck-pickup"></i></div>
+            <h3>Entreprises & Mines</h3>
+            <p>Prévention du risque routier salarié : HSE, flottes, conduite sur piste, audits et accompagnement terrain.</p>
             <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Durée : 1 journée</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Horaires : 8h30–15h</li>
-              <li><i class="fas fa-users" aria-hidden="true"></i> Places : 15 maximum</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Nouméa & Koné</li>
-              <li><i class="fas fa-tag" aria-hidden="true"></i> Tarif : 7 500 F</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> Formations sur site / en salle</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> Audit pré-embauche / conduite</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> Traçabilité & attestations</li>
             </ul>
-            <a href="#particuliers" class="btn-text">En savoir plus <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#entreprises" class="btn-text">Découvrir l’offre entreprise <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </article>
 
           <article class="card">
-            <div class="icon-box" aria-hidden="true"><i class="fas fa-truck-pickup"></i></div>
-            <h3>Offre Entreprises & Mines</h3>
-            <p>Réduisez le risque routier, sécurisez les recrutements, formez vos équipes.</p>
+            <div class="icon-box" aria-hidden="true"><i class="fas fa-gavel"></i></div>
+            <h3>Stages Justice & Permis</h3>
+            <p>Stage en cadre judiciaire ou administratif : technique, comportement, réseau routier calédonien.</p>
             <ul>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Audit pré-embauche</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Spécial piste minière</li>
-              <li><i class="fas fa-check" aria-hidden="true"></i> Expertise accident</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> 1 journée</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> 8h30–15h</li>
+              <li><i class="fas fa-users" aria-hidden="true"></i> 15 places max</li>
             </ul>
-            <a href="#entreprises" class="btn-text">Offre B2B <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#dates" class="btn-text">Voir les dates <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </article>
 
           <article class="card">
             <div class="icon-box" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
             <h3>Devenir Enseignant</h3>
-            <p>Unique centre agréé pour le Titre Professionnel ECSR en Nouvelle-Calédonie.</p>
+            <p>Le CCEFSR est l’unique centre habilité à former les enseignants de la conduite en Nouvelle-Calédonie.</p>
             <ul>
               <li><i class="fas fa-check" aria-hidden="true"></i> Formation diplômante</li>
               <li><i class="fas fa-check" aria-hidden="true"></i> Pédagogie de pointe</li>
               <li><i class="fas fa-check" aria-hidden="true"></i> Métier d’avenir</li>
             </ul>
-            <a href="#moniteurs" class="btn-text">Formation pro <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#moniteurs" class="btn-text">Infos formation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="particuliers" class="details-section bg-light section-padding">
+    <!-- RISQUE ROUTIER (nouvelle section clé) -->
+    <section id="risque" class="section-padding bg-light" aria-labelledby="risque-title">
       <div class="container split-layout">
         <div class="text-content">
-          <h2>Stages : Justice et restitution de permis</h2>
-          <p>Notre approche dépasse la sanction : compréhension technique, comportementale et contexte calédonien.</p>
-          <p><strong>Horaires :</strong> 8h30–15h • <strong>Places :</strong> 15 maximum • <strong>Lieu :</strong> 256 rue Antoine Griscelli, Boulari.</p>
+          <h2 id="risque-title">Risque routier salarié : un enjeu humain, financier et juridique</h2>
+
+          <p>
+            En Nouvelle-Calédonie, les accidents de trajet et de mission font partie des risques professionnels les plus graves.
+            Au-delà du drame humain, l’entreprise doit être en mesure de <strong>prouver</strong> qu’elle a mis en place des actions concrètes
+            de prévention (formation, sensibilisation, procédures, traçabilité).
+          </p>
+
+          <p>
+            Identifier le risque dans le DUER ne suffit pas : ce qui compte, c’est l’action. Le CCEFSR vous aide à transformer
+            une obligation de prévention en une démarche claire, applicable et adaptée au terrain calédonien.
+          </p>
+
+          <div class="benefits">
+            <div class="benefit"><i class="fas fa-helmet-safety" aria-hidden="true"></i> Réduction du risque terrain (HSE)</div>
+            <div class="benefit"><i class="fas fa-user-shield" aria-hidden="true"></i> Protection employeur (preuve d’actions)</div>
+            <div class="benefit"><i class="fas fa-chart-line" aria-hidden="true"></i> Moins d’arrêts, d’incidents, d’immobilisations</div>
+          </div>
 
           <div class="cta-row">
-            <a href="#contact" class="btn btn-primary">
-              <i class="fas fa-calendar-check" aria-hidden="true"></i> Pré-inscription
+            <a class="btn btn-primary" href="#entreprises">
+              <i class="fas fa-building" aria-hidden="true"></i> Voir l’offre entreprise
             </a>
 
-            <a class="btn btn-outline btn-outline-dark"
-               href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20m'inscrire%20au%20stage%20justice/permis.%20Pouvez-vous%20me%20confirmer%20les%20dates%20et%20les%20modalit%C3%A9s%20?"
-               target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+            <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+               href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20sur%20le%20risque%20routier%20salari%C3%A9%20:%20flotte%20/%20mines%20/%20trajets.%20Soci%C3%A9t%C3%A9%20:%20%20Effectif%20:%20%20">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Échange rapide WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img
+            src="https://i.postimg.cc/qRb9mhZ6/image-3.png"
+            alt="Prévention du risque routier en entreprise"
+            class="content-img"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTREPRISES (section renforcée) -->
+    <section id="entreprises" class="details-section section-padding" aria-labelledby="entreprises-title">
+      <div class="container">
+        <h2 id="entreprises-title" class="section-title">Entreprises : transformez le risque en performance</h2>
+
+        <div class="enterprise-hero">
+          <div class="enterprise-box">
+            <h3>Ce que nous apportons aux entreprises calédoniennes</h3>
+            <p class="muted">
+              Le CCEFSR accompagne les organisations (HSE, flottes, mines, BTP, transport) avec des actions concrètes,
+              adaptées au terrain calédonien, et orientées résultats : sécurité, traçabilité, responsabilisation.
+            </p>
+
+            <div class="enterprise-highlights">
+              <div class="eh"><i class="fas fa-check" aria-hidden="true"></i> Formations 1–2 jours, groupes de 8–10</div>
+              <div class="eh"><i class="fas fa-check" aria-hidden="true"></i> Interventions sur site (pistes, flottes, terrain)</div>
+              <div class="eh"><i class="fas fa-check" aria-hidden="true"></i> Attestations + traçabilité des actions</div>
+              <div class="eh"><i class="fas fa-check" aria-hidden="true"></i> Audit pré-embauche / évaluation de conduite</div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact">
+                <i class="fas fa-file-signature" aria-hidden="true"></i> Demander une proposition
+              </a>
+
+              <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20confidentiel%20(Entreprise)%20:%20Soci%C3%A9t%C3%A9%20:%20%20Secteur%20:%20%20Nombre%20de%20conducteurs%20:%20%20Objectif%20:%20r%C3%A9duction%20incidents%20/%20tra%C3%A7abilit%C3%A9%20/%20audit%20">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Échange confidentiel
+              </a>
+            </div>
+
+            <p class="muted small">
+              *Confidentiel = on parle de vos enjeux (flotte, trajets, piste, procédures) sans “vente agressive”.
+            </p>
+          </div>
+
+          <div class="enterprise-box enterprise-box-alt">
+            <h3>Nos formats (simples, efficaces)</h3>
+
+            <div class="offer-grid">
+              <div class="offer">
+                <div class="offer-title"><i class="fas fa-bolt" aria-hidden="true"></i> Diagnostic Flash</div>
+                <div class="offer-text">½ journée / 1 journée : état des lieux, échanges, recommandations, plan d’action.</div>
+              </div>
+
+              <div class="offer">
+                <div class="offer-title"><i class="fas fa-people-group" aria-hidden="true"></i> Formation Entreprise</div>
+                <div class="offer-text">1–2 jours : groupe(s) de 8–10, pédagogie adulte, cas concrets, attestations.</div>
+              </div>
+
+              <div class="offer">
+                <div class="offer-title"><i class="fas fa-clipboard-list" aria-hidden="true"></i> Audit Conduite</div>
+                <div class="offer-text">Pré-embauche / évaluation : compétences réelles, sécurité, attitude, retour clair.</div>
+              </div>
+
+              <div class="offer">
+                <div class="offer-title"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Post-Accident</div>
+                <div class="offer-text">Analyse technique, facteurs humains, mesures correctives, prévention récurrence.</div>
+              </div>
+            </div>
+
+            <div class="enterprise-proof">
+              <div class="proof-pill"><i class="fas fa-award" aria-hidden="true"></i> Expertise & méthode</div>
+              <div class="proof-pill"><i class="fas fa-map" aria-hidden="true"></i> Contexte calédonien</div>
+              <div class="proof-pill"><i class="fas fa-shield" aria-hidden="true"></i> Approche HSE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTICULIERS -->
+    <section id="particuliers" class="details-section bg-light section-padding">
+      <div class="container split-layout reverse">
+        <div class="text-content">
+          <h2>Stages : Justice et restitution de permis</h2>
+          <p>
+            Que ce stage s’inscrive dans un cadre judiciaire (alternative aux poursuites) ou administratif (restitution),
+            notre approche dépasse la simple sanction : compréhension technique, comportementale et contexte calédonien.
+          </p>
+
+          <p>
+            <strong>Horaires :</strong> 8h30–15h • <strong>Places :</strong> 15 maximum •
+            <strong>Lieu :</strong> 256 rue Antoine Griscelli, Boulari.
+          </p>
+
+          <div class="cta-row">
+            <a href="#dates" class="btn btn-primary">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i> Choisir une date
+            </a>
+
+            <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+               href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20m'inscrire%20au%20stage%20justice/permis.%20Date%20souhait%C3%A9e%20:%20Nom%20:%20T%C3%A9l%20:%20">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp inscription
             </a>
 
             <a class="btn btn-outline btn-outline-dark"
@@ -219,130 +377,156 @@
           </div>
 
           <div class="mini-trust">
-            <div class="pill"><i class="fas fa-shield-halved" aria-hidden="true"></i> Encadrement expert</div>
+            <div class="pill"><i class="fas fa-location-dot" aria-hidden="true"></i> Boulari</div>
             <div class="pill"><i class="fas fa-clock" aria-hidden="true"></i> 8h30–15h</div>
             <div class="pill"><i class="fas fa-users" aria-hidden="true"></i> 15 places max</div>
           </div>
         </div>
 
         <div class="image-content">
-          <img src="https://i.postimg.cc/QMsGVrTr/image2.png"
-               alt="Salle de formation CCEFSR"
-               class="content-img"
-               loading="lazy"
-               decoding="async" />
+          <img
+            src="https://i.postimg.cc/QMsGVrTr/image2.png"
+            alt="Salle de formation CCEFSR"
+            class="content-img"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Prochaines dates -->
+    <!-- DATES STAGES -->
     <section id="dates" class="section-padding" aria-labelledby="dates-title">
       <div class="container">
-        <h2 id="dates-title" class="section-title">Prochaines dates de stages</h2>
+        <h2 id="dates-title" class="section-title">Prochaines dates de stages (Particuliers)</h2>
 
-        <div class="dates-grid">
-          <div class="dates-card">
-            <h3><i class="fas fa-gavel" aria-hidden="true"></i> Stage Justice / Permis</h3>
-            <p class="muted">
-              Horaires : <strong>8h30–15h</strong> • Places : <strong>15 maximum</strong> • Lieu : <strong>256 rue Antoine Griscelli, Boulari</strong>
-            </p>
+        <div class="dates-intro">
+          <div class="dates-chip"><i class="fas fa-location-dot" aria-hidden="true"></i> 256 rue Antoine Griscelli — Boulari</div>
+          <div class="dates-chip"><i class="fas fa-clock" aria-hidden="true"></i> 8h30–15h</div>
+          <div class="dates-chip"><i class="fas fa-users" aria-hidden="true"></i> 15 places max</div>
+          <div class="dates-chip warn"><i class="fas fa-circle-info" aria-hidden="true"></i> Pas de stage le samedi 4 janvier</div>
+        </div>
 
-            <div class="dates-note">
-              <i class="fas fa-circle-info" aria-hidden="true"></i>
-              <span><strong>Pas de stage le 1er samedi de janvier</strong> (indiqué “samedi 4 janvier”).</span>
-            </div>
-
-            <div class="dates-table" role="table" aria-label="Liste des sessions">
-              <div class="row head" role="row">
-                <div role="columnheader">Date</div>
-                <div role="columnheader">Lieu</div>
-                <div role="columnheader">Horaires</div>
-                <div role="columnheader">Places</div>
+        <div class="session-grid">
+          <article class="session" data-status="open">
+            <header class="session-head">
+              <div class="session-title">
+                <h3>Samedi 20 décembre 2025</h3>
+                <div class="session-meta">Stage Justice / Permis • Boulari</div>
               </div>
+              <span class="session-badge">Ouvert</span>
+            </header>
 
-              <div class="row" role="row">
-                <div role="cell"><strong>Samedi 20 décembre 2025</strong></div>
-                <div role="cell">Boulari</div>
-                <div role="cell">8h30–15h</div>
-                <div role="cell">15</div>
-              </div>
-
-              <div class="row" role="row">
-                <div role="cell"><strong>Samedi 10 janvier 2026</strong></div>
-                <div role="cell">Boulari</div>
-                <div role="cell">8h30–15h</div>
-                <div role="cell">15</div>
-              </div>
-
-              <div class="row" role="row">
-                <div role="cell"><strong>Samedi 17 janvier 2026</strong></div>
-                <div role="cell">Boulari</div>
-                <div role="cell">8h30–15h</div>
-                <div role="cell">15</div>
-              </div>
-
-              <div class="row" role="row">
-                <div role="cell"><strong>Samedi 24 janvier 2026</strong></div>
-                <div role="cell">Boulari</div>
-                <div role="cell">8h30–15h</div>
-                <div role="cell">15</div>
-              </div>
-
-              <div class="row" role="row">
-                <div role="cell"><strong>Samedi 31 janvier 2026</strong></div>
-                <div role="cell">Boulari</div>
-                <div role="cell">8h30–15h</div>
-                <div role="cell">15</div>
-              </div>
-            </div>
-
-            <div class="dates-actions">
-              <a class="btn btn-primary" href="#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i> Réserver une place</a>
-              <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
-                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%20une%20place%20pour%20le%20stage%20(8h30-15h).%20Date%20souhait%C3%A9e%20:%20">
-                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Réserver via WhatsApp
+            <div class="session-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%201%20place%20pour%20le%20stage%20du%20samedi%2020%20d%C3%A9cembre%202025%20(8h30-15h).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                Réserver WhatsApp
               </a>
             </div>
-          </div>
 
-          <div class="dates-card">
-            <h3><i class="fas fa-helmet-safety" aria-hidden="true"></i> Entreprises / Flottes</h3>
-            <p>Interventions sur site (Mines, BTP, Transport) : HSE, éco-conduite, piste minière, audits pré-embauche.</p>
-            <ul class="small-list">
-              <li>✅ Programme sur mesure</li>
-              <li>✅ Rapport & recommandations</li>
-              <li>✅ Déploiement multi-sites</li>
-            </ul>
-            <a class="btn btn-primary" href="#contact"><i class="fas fa-briefcase" aria-hidden="true"></i> Demander une offre</a>
-          </div>
+            <div class="session-foot">
+              <span><strong>Horaires :</strong> 8h30–15h</span>
+              <span><strong>Places :</strong> 15 max</span>
+              <span><strong>Tarif :</strong> 7 500 F</span>
+            </div>
+          </article>
+
+          <article class="session" data-status="open">
+            <header class="session-head">
+              <div class="session-title">
+                <h3>Samedi 10 janvier 2026</h3>
+                <div class="session-meta">Stage Justice / Permis • Boulari</div>
+              </div>
+              <span class="session-badge">Ouvert</span>
+            </header>
+
+            <div class="session-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%201%20place%20pour%20le%20stage%20du%20samedi%2010%20janvier%202026%20(8h30-15h).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                Réserver WhatsApp
+              </a>
+            </div>
+
+            <div class="session-foot">
+              <span><strong>Horaires :</strong> 8h30–15h</span>
+              <span><strong>Places :</strong> 15 max</span>
+              <span><strong>Tarif :</strong> 7 500 F</span>
+            </div>
+          </article>
+
+          <article class="session" data-status="open">
+            <header class="session-head">
+              <div class="session-title">
+                <h3>Samedi 17 janvier 2026</h3>
+                <div class="session-meta">Stage Justice / Permis • Boulari</div>
+              </div>
+              <span class="session-badge">Ouvert</span>
+            </header>
+
+            <div class="session-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%201%20place%20pour%20le%20stage%20du%20samedi%2017%20janvier%202026%20(8h30-15h).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                Réserver WhatsApp
+              </a>
+            </div>
+
+            <div class="session-foot">
+              <span><strong>Horaires :</strong> 8h30–15h</span>
+              <span><strong>Places :</strong> 15 max</span>
+              <span><strong>Tarif :</strong> 7 500 F</span>
+            </div>
+          </article>
+
+          <article class="session" data-status="open">
+            <header class="session-head">
+              <div class="session-title">
+                <h3>Samedi 24 janvier 2026</h3>
+                <div class="session-meta">Stage Justice / Permis • Boulari</div>
+              </div>
+              <span class="session-badge">Ouvert</span>
+            </header>
+
+            <div class="session-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%201%20place%20pour%20le%20stage%20du%20samedi%2024%20janvier%202026%20(8h30-15h).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                Réserver WhatsApp
+              </a>
+            </div>
+
+            <div class="session-foot">
+              <span><strong>Horaires :</strong> 8h30–15h</span>
+              <span><strong>Places :</strong> 15 max</span>
+              <span><strong>Tarif :</strong> 7 500 F</span>
+            </div>
+          </article>
+
+          <article class="session" data-status="open">
+            <header class="session-head">
+              <div class="session-title">
+                <h3>Samedi 31 janvier 2026</h3>
+                <div class="session-meta">Stage Justice / Permis • Boulari</div>
+              </div>
+              <span class="session-badge">Ouvert</span>
+            </header>
+
+            <div class="session-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20r%C3%A9server%201%20place%20pour%20le%20stage%20du%20samedi%2031%20janvier%202026%20(8h30-15h).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                Réserver WhatsApp
+              </a>
+            </div>
+
+            <div class="session-foot">
+              <span><strong>Horaires :</strong> 8h30–15h</span>
+              <span><strong>Places :</strong> 15 max</span>
+              <span><strong>Tarif :</strong> 7 500 F</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="entreprises" class="details-section section-padding">
-      <div class="container split-layout reverse">
-        <div class="text-content">
-          <h2>Entreprises : transformez le risque en performance</h2>
-          <ul class="list-styled">
-            <li><strong>HSE :</strong> réduire l’accidentologie et les arrêts de travail.</li>
-            <li><strong>Éco-conduite :</strong> réduire consommation et usure.</li>
-            <li><strong>Terrain :</strong> conduite piste minière / terrain difficile.</li>
-            <li><strong>Expertise post-accident :</strong> analyse des causes + mesures correctives.</li>
-            <li><strong>Audit pré-embauche :</strong> test technique + sécurité + attitude, rapport immédiat.</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Demander une offre flotte</a>
-        </div>
-
-        <div class="image-content">
-          <img src="https://i.postimg.cc/qRb9mhZ6/image-3.png"
-               alt="Formation conduite sur piste minière"
-               class="content-img"
-               loading="lazy"
-               decoding="async" />
-        </div>
-      </div>
-    </section>
-
+    <!-- MONITEURS -->
     <section id="moniteurs" class="banner-moniteur" aria-labelledby="moniteurs-title">
       <div class="container">
         <div class="success-badge"><i class="fas fa-trophy" aria-hidden="true"></i> Actualité 2025</div>
@@ -365,34 +549,24 @@
 
         <div class="faq">
           <details>
-            <summary>Quel est le tarif et la durée du stage Justice / Permis ?</summary>
-            <p>Durée : <strong>1 journée</strong> (horaires <strong>8h30–15h</strong>). Tarif indicatif : <strong>7 500 F</strong>.</p>
+            <summary>Entreprise : que propose le CCEFSR ?</summary>
+            <p>Prévention du risque routier salarié : formations 1–2 jours, interventions terrain (mines/flottes), audits (pré-embauche/évaluation), traçabilité et attestations.</p>
           </details>
 
           <details>
-            <summary>Où se déroulent les stages actuellement ?</summary>
-            <p><strong>Adresse des stages</strong> : 256 rue Antoine Griscelli, Boulari.</p>
+            <summary>Particuliers : horaires, places, adresse ?</summary>
+            <p>Stage en 1 journée : <strong>8h30–15h</strong>, <strong>15 places maximum</strong>, <strong>256 rue Antoine Griscelli, Boulari</strong>.</p>
           </details>
 
           <details>
-            <summary>Combien de places ?</summary>
-            <p><strong>15 places maximum</strong> par session. Réservez tôt (WhatsApp ou formulaire).</p>
-          </details>
-
-          <details>
-            <summary>Comment s’inscrire ?</summary>
-            <p>Le plus rapide : <strong>WhatsApp (+687 76 99 29)</strong> ou le <strong>formulaire</strong> ci-dessous. Nous vous rappelons pour valider la date et les modalités.</p>
-          </details>
-
-          <details>
-            <summary>Proposez-vous des formations pour entreprises / mines ?</summary>
-            <p>Oui : HSE, éco-conduite, piste minière, audits pré-embauche, expertise post-accident. Offre sur mesure.</p>
+            <summary>Comment réserver rapidement ?</summary>
+            <p>Le plus rapide : WhatsApp <strong>+687 76 99 29</strong> ou appel <strong>+687 77 12 58</strong>.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- Contact + Netlify form -->
+    <!-- CONTACT -->
     <section id="contact" class="contact section-padding" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title" class="section-title">Contactez-nous</h2>
@@ -401,7 +575,7 @@
           <div class="contact-info">
             <h3>Nos coordonnées</h3>
             <p><strong>Responsable :</strong> M. José BOLO</p>
-            <p>Pour les inscriptions aux stages et demandes entreprises, privilégiez l’appel ou WhatsApp.</p>
+            <p>Pour les inscriptions et demandes entreprises, privilégiez l’appel ou WhatsApp.</p>
 
             <div class="info-item">
               <i class="fas fa-phone-alt" aria-hidden="true"></i>
@@ -414,7 +588,7 @@
             <div class="info-item">
               <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
               <p>
-                <a href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations%20/%20m'inscrire%20%C3%A0%20un%20stage."
+                <a href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20(Entreprise%20ou%20Stage)."
                    target="_blank" rel="noopener">
                   WhatsApp : +687 76 99 29
                 </a>
@@ -445,15 +619,8 @@
           </div>
 
           <div class="contact-form-wrapper">
-            <!-- Netlify Forms -->
-            <form
-              class="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              action="/merci"
-            >
+            <!-- Form Netlify (recommandé) -->
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="contact" />
               <p class="hidden">
                 <label>Ne pas remplir : <input name="bot-field" /></label>
@@ -468,24 +635,22 @@
               <label for="email">Votre email (optionnel)</label>
               <input id="email" type="email" name="email" autocomplete="email" placeholder="Ex: nom@email.com" />
 
-              <label for="sujet">Objet</label>
-              <select id="sujet" name="sujet">
-                <option>Stage Particulier (Justice/Permis)</option>
-                <option>Audit Recrutement Chauffeur</option>
-                <option>Formation Entreprise / Flotte</option>
-                <option>Expertise Accident / REAGIR</option>
+              <label for="type">Vous êtes…</label>
+              <select id="type" name="type_demande">
+                <option>Entreprise (HSE / Flotte / Mine / BTP)</option>
+                <option>Particulier (Stage Justice/Permis)</option>
                 <option>Devenir Moniteur</option>
-                <option>Autre demande</option>
+                <option>Autre</option>
               </select>
 
-              <label for="date">Date souhaitée (stage)</label>
-              <select id="date" name="date_souhaitee">
-                <option>Samedi 20 décembre 2025</option>
-                <option>Samedi 10 janvier 2026</option>
-                <option>Samedi 17 janvier 2026</option>
-                <option>Samedi 24 janvier 2026</option>
-                <option>Samedi 31 janvier 2026</option>
-                <option>Autre / à discuter</option>
+              <label for="sujet">Objet</label>
+              <select id="sujet" name="sujet">
+                <option>Échange confidentiel (Entreprise)</option>
+                <option>Devis formation entreprise</option>
+                <option>Audit de conduite / pré-embauche</option>
+                <option>Stage Particulier (Justice/Permis)</option>
+                <option>Devenir Moniteur</option>
+                <option>Autre demande</option>
               </select>
 
               <label for="msg">Message</label>
@@ -495,19 +660,24 @@
                 <i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyer ma demande
               </button>
 
-              <p class="form-note">Stage : 8h30–15h • 15 places max • Adresse : 256 rue Antoine Griscelli, Boulari</p>
-            </form>
+              <p class="form-note">
+                Entreprises : échange confidentiel + proposition adaptée (HSE/flotte/terrain).<br/>
+                Particuliers : stage 8h30–15h, 15 places, 256 rue Antoine Griscelli, Boulari.
+              </p>
 
-            <div class="form-alt">
-              <p class="muted">Ou contactez-nous directement :</p>
-              <div class="cta-row">
-                <a class="btn btn-outline btn-outline-dark" href="tel:+687771258"><i class="fas fa-phone" aria-hidden="true"></i> Appeler</a>
-                <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
-                   href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20m'inscrire%20%C3%A0%20un%20stage%20(8h30-15h,%2015%20places).%20Date%20souhait%C3%A9e%20:%20">
-                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
-                </a>
+              <div class="form-alt">
+                <p class="muted">Ou contactez-nous directement :</p>
+                <div class="cta-row">
+                  <a class="btn btn-outline btn-outline-dark" href="tel:+687771258">
+                    <i class="fas fa-phone" aria-hidden="true"></i> Appeler
+                  </a>
+                  <a class="btn btn-outline btn-outline-dark" target="_blank" rel="noopener"
+                     href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20un%20%C3%A9change%20(Entreprise%20ou%20Stage).%20Nom%20:%20%20T%C3%A9l%20:%20">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                  </a>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
 
         </div>
@@ -523,7 +693,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2023–2025 CCEFSR. Tous droits réservés.</p>
+        <p>&copy; 2023–2026 CCEFSR. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
