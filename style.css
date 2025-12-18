@@ -394,8 +394,16 @@ p{margin-bottom:14px}
 /* Footer */
 .site-footer{background:var(--secondary);color:#bbb;padding:54px 0 18px;text-align:center}
 .footer-content{display:flex;flex-direction:column;align-items:center}
-.footer-logo-section{margin-bottom:24px}
-.footer-logo-img{max-height:78px;width:auto;margin-bottom:14px;background:var(--white);padding:10px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.2)}
+.footer-logo-section{margin-bottom:24px;text-align:center}
+.footer-logo-img{
+  max-height:78px;
+  width:auto;
+  margin:0 auto 14px auto; /* ✅ correction: centrage garanti */
+  background:var(--white);
+  padding:10px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,.2)
+}
 .footer-logo-section p{font-size:1.05rem;color:var(--white)}
 .footer-bottom{margin-top:32px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);width:100%;font-size:.9rem}
 
