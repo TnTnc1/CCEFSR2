@@ -8,26 +8,21 @@
   <meta name="description" content="CCEFSR Nouvelle-Calédonie : prévention du risque routier salarié pour entreprises (HSE, flottes, mines), stages Justice/Permis (8h30–15h, 15 places), audits, expertise accident, formation ECSR." />
   <meta name="theme-color" content="#F39C12" />
 
-  <!-- Canonical (mets ton domaine quand tu l'auras : https://ccefsr.nc/) -->
   <link rel="canonical" href="https://ccefsr2.netlify.app/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="CCEFSR — Sécurité Routière en Nouvelle-Calédonie" />
   <meta property="og:description" content="Entreprises : prévention du risque routier salarié (HSE). Particuliers : stages Justice/Permis. Audits & expertise." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://i.postimg.cc/8cBqBfG8/logo.png" />
 
-  <!-- Perf: fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
   <link rel="stylesheet" href="./style.css" />
 
-  <!-- SEO: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -61,7 +56,6 @@
 <body>
   <a class="skip-link" href="#accueil">Aller au contenu</a>
 
-  <!-- Bandeau haut : focus business + stage -->
   <div class="top-announcement" role="region" aria-label="Infos rapides">
     <div class="container announcement-inner">
       <div class="announcement-left">
@@ -78,7 +72,6 @@
     </div>
   </div>
 
-  <!-- CTA flottant -->
   <div class="floating-cta" aria-label="Contact rapide">
     <a class="fab fab-whatsapp"
        href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations%20/%20m'inscrire%20%C3%A0%20un%20stage%20ou%20parler%20de%20pr%C3%A9vention%20entreprise."
@@ -127,7 +120,6 @@
   </header>
 
   <main id="main">
-    <!-- HERO: repositionnement entreprise + particuliers -->
     <section id="accueil" class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <div class="video-container" aria-hidden="true">
@@ -157,9 +149,6 @@
             Voir les dates de stage
           </a>
         </div>
-
-        <!-- ✅ Bulles supprimées ici (mini-trust / pills) -->
-
       </div>
     </section>
 
@@ -170,7 +159,7 @@
           Info / Réservation :
           <strong><a href="tel:+687771258">+687 77 12 58</a></strong> ou
           <strong><a href="tel:+687769929">+687 76 99 29</a></strong>
-          &nbsp;—&nbsp;
+           — 
           <strong>
             <a href="https://wa.me/687769929?text=Bonjour%20CCEFSR,%20je%20souhaite%20des%20informations."
                target="_blank" rel="noopener">WhatsApp</a>
@@ -179,7 +168,6 @@
       </div>
     </div>
 
-    <!-- DOMAINES -->
     <section class="services section-padding" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title" class="section-title">Nos domaines d’intervention</h2>
@@ -224,7 +212,6 @@
       </div>
     </section>
 
-    <!-- RISQUE ROUTIER (nouvelle section clé) -->
     <section id="risque" class="section-padding bg-light" aria-labelledby="risque-title">
       <div class="container split-layout">
         <div class="text-content">
@@ -271,7 +258,6 @@
       </div>
     </section>
 
-    <!-- ENTREPRISES (section renforcée) -->
     <section id="entreprises" class="details-section section-padding" aria-labelledby="entreprises-title">
       <div class="container">
         <h2 id="entreprises-title" class="section-title">Entreprises : transformez le risque en performance</h2>
@@ -342,7 +328,6 @@
       </div>
     </section>
 
-    <!-- PARTICULIERS -->
     <section id="particuliers" class="details-section bg-light section-padding">
       <div class="container split-layout reverse">
         <div class="text-content">
@@ -392,7 +377,6 @@
       </div>
     </section>
 
-    <!-- DATES STAGES -->
     <section id="dates" class="section-padding" aria-labelledby="dates-title">
       <div class="container">
         <h2 id="dates-title" class="section-title">Prochaines dates de stages (Particuliers)</h2>
@@ -499,7 +483,6 @@
       </div>
     </section>
 
-    <!-- MONITEURS -->
     <section id="moniteurs" class="banner-moniteur" aria-labelledby="moniteurs-title">
       <div class="container">
         <div class="success-badge"><i class="fas fa-trophy" aria-hidden="true"></i> Actualité 2025</div>
@@ -515,7 +498,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq" class="section-padding bg-light" aria-labelledby="faq-title">
       <div class="container">
         <h2 id="faq-title" class="section-title">FAQ</h2>
@@ -539,7 +521,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="contact section-padding" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title" class="section-title">Contactez-nous</h2>
@@ -592,18 +573,9 @@
           </div>
 
           <div class="contact-form-wrapper">
-            <!-- Form Netlify (recommandé) -->
             <form class="contact-form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      action="/merci.html">
-
-              <input type="hidden" name="form-name" value="contact" />
-              <p class="hidden">
-                <label>Ne pas remplir : <input name="bot-field" /></label>
-              </p>
+                  action="https://formspree.io/f/mdakvdda"
+                  method="POST">
 
               <label for="nom">Votre nom et prénom</label>
               <input id="nom" type="text" name="nom_prenom" required autocomplete="name" placeholder="Ex: Jean Dupont" />
@@ -672,7 +644,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2023–2026 CCEFSR. Tous droits réservés.</p>
+        <p>© 2023–2026 CCEFSR. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
